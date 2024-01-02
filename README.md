@@ -12,6 +12,8 @@ Create an RDS database in a separate VPC subnet and configure the EC2 instance t
 
 Step: using terraform resources we create the desire infra (vpc,subnets,nat,getway,elasticip,route tables and associations, rds_instance, security group, endpoint and ec2)
 
+We have variablize the username and password 
+
 20_dec terraform task:
 Create an ALB to distribute traffic to the EC2 instance and configure an autoscaling group based on CPU utilization
 
@@ -29,6 +31,15 @@ Write a user data script to install and configure an application on the EC2 inst
 Step: using terraform resources we create the desire infra (ec2,iam role,security group,cw_agent,cloud watch metrics)
 we write the cw_agent_config.json file for ec2 metrics like mem and disk
 we write nginx.sh shell script to install cw_agent on ec2 machine
+
+
+
+
+
+
+
+
+
 
 
 
